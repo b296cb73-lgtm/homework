@@ -1,0 +1,123 @@
+
+        /* Whatapp Icon CSS - */
+
+        .float-whatsapp{
+                position:fixed;
+                width:40px;
+                height:40px;
+                bottom:4px;
+                left:40px;
+                background-color:#25d366;
+                color:#FFF;
+                border-radius:50px;
+                text-align:center;
+                font-size:30px;
+                box-shadow: 2px 2px 3px #999;
+                z-index:100;
+        }
+        .my-float-whatsapp{
+                margin-top:6px;
+        }
+        .shake-whatsapp{
+                animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+                perspective: 1000px;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                
+        }
+        .shake-whatsapp:hover{
+                animation: shake 0.00s cubic-bezier(.36,.07,.19,.97) both;
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+                perspective: 1000px;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                
+        }
+        @keyframes shake {
+          10%, 90% {
+            transform: translate3d(-1px, 0, 0);
+          }
+          
+          20%, 80% {
+            transform: translate3d(2px, 0, 0);
+          }
+        
+          30%, 50%, 70% {
+            transform: translate3d(-4px, 0, 0);
+          }
+        
+          40%, 60% {
+            transform: translate3d(4px, 0, 0);
+          }
+        }
+        
+        
+        .chat-popup {
+          display: none;
+          position: fixed;
+          bottom: 46px;
+          left: 10px;
+          border: 3px solid #f1f1f1;
+          z-index: 1000;
+          max-height: 100%;
+          overflow-y: auto;
+        }
+        
+        /* Add styles to the form container */
+        .form-container {
+          max-width: 300px;
+          padding: 10px;
+          background-color: white;
+        }
+        
+        /* Full-width textarea */
+        .form-container textarea {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+          resize: none;
+          min-height: 200px;
+        }
+        
+        /* When the textarea gets focus, do something */
+        .form-container textarea:focus {
+          background-color: #ddd;
+          outline: none;
+          min-height: 100px;
+        }
+        
+        /* Set a style for the submit/send button */
+        .form-container .btn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom:10px;
+          opacity: 0.8;
+        }
+        
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+          background-color: white;
+          color: red;
+          padding: 16px 20px;
+          border: 2px solid red;
+          cursor: pointer;
+          width: 36%;
+          margin-bottom:10px;
+          opacity: 0.8;
+          border-radius: 7px;
+        }
+        
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover, .open-button:hover {
+          opacity: 1;
+        }
+    

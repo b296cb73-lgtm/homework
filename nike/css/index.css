@@ -1,0 +1,18 @@
+/* base */
+@import "normalize.css";
+@import "fonts.css";
+@import "vars.css";
+@import "globals.css";
+
+/* blocks */
+@import "header.css";
+@import "menu.css";
+@import "burger.css";
+@import "hero.css";
+@import "air-mag.css";
+@import "product.css";
+@import "characteristics.css";
+@import "top-models.css";
+@import "footer.css";
+@import "modal.css";
+@import "modal-buy.css";
